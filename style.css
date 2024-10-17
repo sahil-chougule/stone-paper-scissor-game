@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FEDF7B;
+    font-family: "Acme", sans-serif;
+    color: #4b3f34;
+    text-align: center;
+}
+h1{
+ font-size: 3rem;
+}
+
+.ui-background-img {
+    height: 40vmin;
+    width: 40vmin;
+    position: fixed;
+    background-size: cover;
+    bottom: 0vmin;
+    right: 0vmin;
+    z-index: -1;
+}
+
+.game_container {
+    width: 100%;
+    height: 100vmin;
+    padding: 20px;
+}
+
+.game_name_h2 h1 {
+    font-size: 3rem;
+}
+
+.h3_heading {
+    margin-top: 2rem;
+    font-family: "Architects Daughter", cursive;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.img_container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 2rem;
+    width: 100vmin;
+    margin-top: 3vmax;
+}
+
+.pic {
+   height: 40vmin;
+   margin: 0 auto;
+
+}
+
+.pic:hover {
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 3px grey)
+    
+}
+
+.img_name_pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.img_name {
+    font-family: "Architects Daughter", cursive;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.mini_images {
+    height: 5vmin;
+    width: 5vmin;
+    margin-left: 10px;
+}
+
+#paper_id {
+    height: 7vmin;
+    width: 7vmin;
+}
+
+#scissor_id {
+    height: 3vmin;
+    width: 3vmin;
+    margin-left: 0.60vmin;
+}
+
+.image_item {
+    display: grid;
+    align-items: center;
+}
+@media(max-width: 552.73px) {
+    
+    #middle {
+        grid-column: span 2; /* This item spans across 2 columns */
+      }
+    
+}
+
+/* secon html page css */
+
+.game_result
+{
+    visibility: hidden;
+    left: 50vmin;
+    right: 50vmin;
+    margin-top: 1vmax;
+}
+.result_highlight
+{   
+    visibility: hidden;
+    left: 50vmin;
+    right: 50vmin;
+    margin-top: 8vmax;
+   
+}
+.game_visualisation
+{   
+    margin: 0 auto;
+    margin-top: 5vmax;
+    /* height: 55%; */
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.img_2ndpage
+{    
+    height: 27vmin;
+    margin-right: 0;
+    /* width: 100%; */
+    /* height: 50%; */
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+}
+.outer_div
+{  
+    /* width: 60vmin; */
+    margin: 0 auto;
+    height: 100%;
+   
+}
+.apply_anime_on_left_fist
+{
+    animation: hand_shake_anime_left_fist 1s 2 ease-in-out;
+    transform-origin: left;
+}
+@keyframes hand_shake_anime_left_fist {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    75%
+    {
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+    
+}
+.apply_anime_on_right_fist
+{
+    animation: hand_shake_anime_right_fist 1s 2 ease-in-out;
+    transform-origin: right;
+}
+@keyframes hand_shake_anime_right_fist {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    75%
+    {
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.small_text
+{
+    font-family: "Architects Daughter", cursive;
+    font-weight: 700;
+    font-size: 1.5rem; 
+}
+
+@keyframes result_animation {
+    0% {
+        opacity: 0;
+        transform:  scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform:  scale(3.8);
+    }
+    100% {
+        opacity: 1;
+        transform:  scale(1);
+    }
+}
+.result_anime {
+   
+    animation: result_animation 2s ease forwards;
+}
+.img_div
+{
+  margin-right: 0;
+}
+.corner_img
+{
+    height: 20vmin;
+    margin-right:auto;
+}
+.corner_img_div
+{
+   width: 100%; 
+}
